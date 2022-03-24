@@ -27,12 +27,24 @@ int main()
     cout << "a % 3 = " << a << endl;
     z = 10.0 / 3;
     cout << "10 / 3 = " << z << endl;
-    */
+    
     int rok;
     cout << "Podaj wiek: ";
     cin >> rok;
     cout << "Żyjesz " << rok << " lat, czyli " << (rok * 12) << " miesiecy, lub " << (rok * 365) + (rok / 4) << " dni.";
-    
+    */
+    int a, b, c, d, e;
+    cout << "Podaj ocenę 1: ";
+    cin >> a;
+    cout << "Podaj ocenę 2: ";
+    cin >> b;
+    cout << "Podaj ocenę 3: ";
+    cin >> c;
+    cout << "Podaj ocenę 4: ";
+    cin >> d;
+    cout << "Podaj ocenę 5: ";
+    cin >> e;
+    cout << "Średnia ocen: " << (a + b + c + d + e) / 5.00;
     
     
     
