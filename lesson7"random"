@@ -26,12 +26,12 @@ int main()
         cout << x1<< endl;
         if (x1 == 100)
         {
-            cout << "liczba jest równa 100";
+            cout << "największa możliwa liczba";
             break;
         }
         else if (x1 == 0)
         {
-            cout << "liczba jest równa 0";
+            cout << "najmniejsza możliwa liczba";
             break;
         }
     }
