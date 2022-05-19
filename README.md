@@ -1,0 +1,2 @@
+# Informatyka
+Notatki z lekcji
