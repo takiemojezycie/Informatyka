@@ -12,7 +12,6 @@ answer = [signs]
 
 attempt_number = 1
 while len(answer) <= permutation_range-1:
-    print("Podejsc: " + str(attempt_number), end='\r')  # /n następna linia /r zastępuje tą sammą linię
 
     line = ""
     for c in range(input_range):
