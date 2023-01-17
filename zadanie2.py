@@ -11,7 +11,7 @@ for e in range(1, input_range + 1):
     else:
         chosen = chosen * e
 
-
+print("Mozliwych: " + str(chosen))
 
 permutation_range = 1
 for a in range(1, input_range + 1):
@@ -21,7 +21,6 @@ signs = ""
 for b in range(1, input_range + 1):
     signs += str(b)
 backup = signs
-print("Backup: " + backup)
 
 answer = []
 
@@ -43,5 +42,5 @@ while len(answer) <= chosen - 1:
     attempt_number += 1
 
 print("Podejsc: " + str(attempt_number))
-for d in range(permutation_range - 1):
-    print("Proba nr " + str(d) + ": " + answer[d])
+for d in range(len(answer)):
+    print("Proba nr " + str(d+1) + ": " + answer[d])
