@@ -20,25 +20,28 @@ for a in range(1, input_range + 1):
 signs = ""
 for b in range(1, input_range + 1):
     signs += str(b)
+backup = signs
+print("Backup: " + backup)
 
-
-
+answer = []
 
 attempt_number = 1
 while len(answer) <= chosen - 1:
 
     line = ""
-    for c in range(1, input_chosen + 1):
+    for c in range(input_chosen):
         sign = random.choice(signs)
         line += sign
         signs = signs.replace(sign, "")
 
     if line not in answer:
         answer.append(line)
+    else:
+        pass
 
-    signs = answer[0]
+    signs = backup
     attempt_number += 1
 
 print("Podejsc: " + str(attempt_number))
-for d in range(permutation_range):
-    print(answer[d])
+for d in range(permutation_range - 1):
+    print("Proba nr " + str(d) + ": " + answer[d])
