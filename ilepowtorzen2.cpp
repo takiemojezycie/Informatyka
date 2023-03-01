@@ -25,8 +25,12 @@ int main()
     int max = najw[0];
     
     for(int i=0;i<20;i++)
+    {
 		if(max > najw[i])
+		{
 			max = najw[i];
+		}
+    }
     
     cout << zbior[max] << " powtarza sie " << najw[max] << " razy" << endl << endl;
     
@@ -45,6 +49,7 @@ int main()
             cout << zbior[i] << " ";
         }
     }
+    
     
     /*
     int liczba;
@@ -65,7 +70,6 @@ int main()
     }
     */
     
-    
-    
     return 0;
 }
+
