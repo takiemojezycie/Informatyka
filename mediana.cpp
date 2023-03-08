@@ -26,17 +26,11 @@ int main()
     
     for (i=0; i<=liczba-2; i++)
     {
-        
         for (j=0; j<=liczba-2; j++)
         {
-            
             if (zbior[j] > zbior[j+1])
             {
-                
-                zmienna = zbior[j];
-                zbior[j] = zbior[j+1];
-                zbior[j+1] = zmienna;
-                
+                swap(zbior[j], zbior[j+1]);
             }
             
         }
