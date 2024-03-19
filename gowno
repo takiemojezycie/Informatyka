@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>pole</title>
+<!--    <link rel="stylesheet" type="text/css" href="style.css" /> -->
+</head>
+
+<body>
+
+    <h4>LICZBY</h4>
+    <form action="program.php" method="post">
+        liczba 1:
+        <input type="text" name="a" />
+            <br/> <br/>
+		liczba 2:
+		<input type="text" name="b" /> 
+            <br/> <br/>
+        <input type="submit" value="OBLICZ" />
+		
+		<select name="dzialanie">
+		<option value="">--- Wybierz dzialanie ---</option>
+		<option value="dodawanie">Dodawanie</option>
+		<option value="odejmowanie">Odejmowanie</option>
+		<option value="mnożenie">Mnożenie</option>
+		<option value="dzielenie">Dzielenie</option>
+		</select>
+    </form>
+<!--    </div>
+</div>  -->
+</body >
+</html>
