@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Liczb niepoprawna</title>
+<!--    <link rel="stylesheet" type="text/css" href="style.css" />
+-->
+</head>
+<body >
+<?php	
+
+$a = $_POST['a'];
+$b = $_POST['b'];
+
+$option = filter_input(INPUT_POST, 'dzialanie', FILTER_SANITIZE_STRING);
+
+function liczenie($zm1, $zm2, $dzialanie)
+{
+	if ($dzialanie == "dodawanie")
+	{
+		echo 'Dodawanie wynosi '.$zm1 + $zm2."<br>\n";
+	} elseif ($dzialanie == "odejmowanie")
+	{
+		echo 'Odejmowanie wynosi '.$zm1 - $zm2."<br>\n";
+	} elseif ($dzialanie == "mnożenie")
+	{
+		echo 'Mnożenie wynosi '.$zm1 * $zm2."<br>\n";
+	} elseif ($dzialanie == "dzielenie")
+	{
+		echo 'Dzielenie wynosi '.$zm1 / $zm2."<br>\n";
+	}
+
+}
+
+liczenie($a, $b, $option);
+
+?>
+
+</body >
